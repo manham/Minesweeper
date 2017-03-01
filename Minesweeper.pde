@@ -73,6 +73,7 @@ public void displayLosingMessage()
     buttons[9][11].setLabel("O");
     buttons[9][12].setLabel("S");
     buttons[9][13].setLabel("E");
+    buttons[9][14].setLabel("!");
 }
 public void displayWinningMessage()
 {
