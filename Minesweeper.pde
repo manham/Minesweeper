@@ -129,7 +129,8 @@ public class MSButton
             displayLosingMessage();
         }
         else if(countBombs(this.r, this.c) > 0){
-            String numBombs = Integer.toString(countBombs(this.r, this.c));
+            String numBombs = new String("");
+            numBombs = numBombs + countBombs(this.r, this.c);
             setLabel(numBombs);
         }
         else{
@@ -156,7 +157,7 @@ public class MSButton
             }
             if(isValid(r+1, c+1) == true && buttons[r+1][c+1].clicked == false){
                 buttons[r+1][c+1].mousePressed();
-            }
+            } 
         }
     }
 
